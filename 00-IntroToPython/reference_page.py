@@ -8,7 +8,6 @@
 # # pygame.display.set_caption("Hello World!!!!!!")
 # # # TODO 00: Change the window caption to say your name.
 # #
-#
 # # screen = pygame.display.set_mode((640, 480))
 # # # TODO 05: Change the window size, make sure your circle code still works.
 # #
