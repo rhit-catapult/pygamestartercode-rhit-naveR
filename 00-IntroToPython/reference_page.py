@@ -13,7 +13,6 @@
 # # # TODO 05: Change the window size, make sure your circle code still works.
 # #
 # # while True:
-# #
 # #         print(event)
 #
 # #         if event.type == pygame.QUIT:
