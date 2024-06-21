@@ -8,6 +8,8 @@
 # # pygame.display.set_caption("Hello World!!!!!!")
 # # # TODO 00: Change the window caption to say your name.
 # #
+
+
 # # screen = pygame.display.set_mode((640, 480))
 # # # TODO 05: Change the window size, make sure your circle code still works.
 # #
@@ -23,7 +25,7 @@
 # #     # Draw things on the screen
 # #
 # #     # TODO 02: Try to draw a circle (any size, any color, anywhere)
-# #     pygame.draw.circle( pygame.Color("Orange"), center:(50,50) )
+# #     pygame.draw.circle( pygame.Color("Orange"), (50,50) )
 # #
 # #     # TODO 03: Try to draw a red circle in the middle of the screen with a radius 100
 # #     #pygame.draw.circle(screen, pygame.Color("Red"), pos, radius, width(optional)  )
@@ -97,6 +99,31 @@
 #
 #         # Update the screen
 #         pygame.display.update()
+#
+#         gettings the mouse position
+#         if event.type == pygame.MOUSEBUTTONDOWN
+#             print(f"You cliked at {pygame.mouse.get_pos()}")
+#
+#         OOP ---> Make sprite classes
+#         Objects know stuff (instance varibles)
+#         Objects can do stuff (methods)
+#         Example:
+#            To make an object (instance) of a class call the constructor
+#           class Hero:
+#
+# def __init__(self, screen, x, y, with_umbrella_filename, without_umbrella_filename):
+#     """ Creates a Hero sprite (Mike) that does not move. If hit by rain he'll put up his umbrella. """
+#
+#     self.screen = screen
+#     self.x = x
+#     self.y = y
+#     self.image_umbrella = pygame.image.load(with_umbrella_filename)
+#     self.image_no_umbrella = pygame.image.load(without_umbrella_filename)
+#     self.last_hit_time = 0
+#
+
+
+#    self.screen.blit(self.image,(self.x,self.y))
 #
 #
 # main()

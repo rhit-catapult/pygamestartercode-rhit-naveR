@@ -56,7 +56,7 @@ class Fighter:
                 del self.missiles[k]
 
 
-def main():
+def main(): #main for tester only
     pygame.init()
     clock = pygame.time.Clock()
     pygame.display.set_caption("Testing the Fighter and Missiles only")

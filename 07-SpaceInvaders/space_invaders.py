@@ -15,6 +15,8 @@ def main():
     # TODO 10: Create an EnemyFleet object (called enemy_fleet) with the screen and enemy_rows
     # TODO 1: Create a Fighter (called fighter)
 
+
+fighter = fighter_missile_module.Fighter(screen)
     while True:
         clock.tick(60)
         for event in pygame.event.get():

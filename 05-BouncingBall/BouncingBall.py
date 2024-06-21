@@ -6,18 +6,66 @@ import random
 # You will implement this module ENTIRELY ON YOUR OWN!
 
 # TODO: Create a Ball class.
+class Ball:
+    def __init__(self, screen):
+        """ Creates a Raindrop sprite that travels down at a random speed. """
+
+        self.screen = screen
+        self.x = random.randint(100, 300)
+        self.y = random.randint(100,300)
+        self.speed_x = random.randint(1, 5)
+        self.speed_y = random.randint(1, 5)
+
+
+    def move(self):
+        """ Move the self.y value of the Raindrop down the screen (y increase) at the self.speed. """
+        self.y += self.speed_y
+        self.x += self.speed_x
+        if self.x > self.screen.get_width():
+            self.speed_x *= -1
+        if self.y > self.screen.get_height():
+            self.speed_y *= -1
+        #if self.x > self.screen.get_heig():
+            self.speed_x *= -1
+
+
+
+
+
+
+    def draw(self):
+        """ Draws this sprite onto the screen. """
+
+        pygame.draw.circle(self.screen,
+                         pygame.Color("Blue"),
+                         (self.x, self.y),
+                         20
+
+                         )
 # TODO: Possible member variables: screen, color, x, y, radius, speed_x, speed_y
-# TODO: Methods: __init__, draw, move
+
+    def off_screen(self):
+
+        return self.y > self.screen.get_height()
+
+
+
+
+
+
+
 
 
 def main():
     pygame.init()
-    screen = pygame.display.set_mode((300, 300))
+    screen = pygame.display.set_mode((1000, 750))
     pygame.display.set_caption('Bouncing Ball')
-    screen.fill(pygame.Color('gray'))
+
     clock = pygame.time.Clock()
 
     # TODO: Create an instance of the Ball class called ball1
+    ball1 = Ball(screen)
+
 
     while True:
         for event in pygame.event.get():
@@ -28,9 +76,17 @@ def main():
         screen.fill(pygame.Color('gray'))
 
         # TODO: Move the ball
+        ball1.move()
+
         # TODO: Draw the ball
+        ball1.draw()
+#        Ball.draw(self.x, self.y)
+
+
+
 
         pygame.display.update()
+
 
 
 main()
