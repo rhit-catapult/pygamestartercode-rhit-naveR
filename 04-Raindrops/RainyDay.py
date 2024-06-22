@@ -82,7 +82,8 @@ def main():
     test_drop = Raindrop(screen, 220, 10)
     # TODO 15: Make a Hero, named mike, with appropriate images, starting at position x=200 y=400.
     # TODO 15: Make a Hero, named alyssa, with appropriate images, starting at position x=700 y=400.
-    mike = hero_module.Hero(screen, 200, 400,"Mike_umbrella.png", "Mike.png")
+    mike = hero_module.Hero(screen, 200, 400,"Mike_umbrella.png",
+                            "../../projectstartercode-revanchassidygabenavaeh/Mike.png")
     alyssa = hero_module.Hero(screen, 700, 400,"Alyssa_umbrella.png", "Alyssa.png")
 
     # TODO 23: Make a Cloud, named cloud, with appropriate images, starting at position x=300 y=50.
