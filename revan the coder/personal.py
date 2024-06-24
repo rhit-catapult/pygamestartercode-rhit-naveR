@@ -1,0 +1,7 @@
+init()
+
+while true:
+
+
+
+main()
